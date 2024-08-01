@@ -1,0 +1,204 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Background Image */
+.bg-image {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Landing Page Styles */
+.landing-card {
+    max-width: 925px;
+    max-height: 650px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(255,255,255,0.9);  /* Add this line for shadow */
+    border-radius: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.page-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+}
+
+.page-number .current-page {
+    font-size: 2rem;
+}
+
+.page-number .total-pages {
+    font-size: 1rem;
+}
+
+
+.survey-title {
+    font-size: 2rem;
+    color: #045bb9;
+}
+
+.survey-subtitle {
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+
+.survey-description,
+.survey-requirement,
+.survey-note {
+    font-size: 1rem;
+    color: grey;
+}
+
+/* Question Page Styles */
+.question-card {
+    max-width: 960px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(255,255,255,0.9);
+    border-radius: 0;
+}
+
+.question-title {
+    font-size: 2rem;
+    color: #045bb9;
+}
+
+.question-description {
+    font-size: 1.3rem;
+    color: #ff4500;
+    font-family: justify;
+}
+
+.add-activity {
+    margin-top: 1rem;    
+}
+
+
+.btn{
+    background-color: #045bb9;
+    color: white;
+    width: 110px;
+    margin-left: 760px;
+    border-radius: 0;
+    margin-top: 60px;
+    
+}
+
+.button{
+    background-color: #045bb9;
+    border-radius: 0;
+    border: none;
+    color: white;
+    width: 210px;
+    height: 40px;
+    margin-left: 320px;
+    margin-top: 10px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+.form-group,
+.form-group2 {
+    width: 47%;
+}
+
+.form-group label,
+.form-group2 label {
+    margin-bottom: 5px;
+    margin-right: 270px;
+    display: block;
+}
+
+.remove-button {
+    background: red;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 429px;
+    
+}
+
+
+/* media quries */
+@media (max-width:768px){
+    .landing-card{
+        max-width: 100%;
+        padding: 15px;
+        
+    }
+
+    .survey-title {
+        font-size: 1.5rem;
+    }
+
+    .survey-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .survey-description,
+    .survey-requirement,
+    .survey-note {
+        font-size: 0.9rem;
+    }
+     
+    .btn{
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 225px;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+
+    .question-card{
+        max-width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .question-title {
+        font-size: 1.5rem;
+    }
+
+    .question-description {
+        font-size: 1rem;
+    }
+
+    .form-container{
+        margin-top:2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group,
+    .form-group2{
+        width: 100%;
+    }
+
+    .form-group label,
+    .form-group2 label {
+    font-size: small;
+    margin-right: 20px;
+    display: flex ;
+}
+
+  .remove-button{
+    margin-left: 330px;
+  }
+}

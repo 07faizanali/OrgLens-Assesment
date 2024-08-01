@@ -1,0 +1,21 @@
+   
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            background: darkslategray;
+            justify-content: center;
+            align-items: center;
+        }
+        .centered-div {
+            width: 200px;
+            height: 200px;
+            background-color: #23cea3; 
+        }
+
+        p{
+            color: white ;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 20px;
+        }
